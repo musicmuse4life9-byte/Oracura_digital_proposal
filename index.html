@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORACURA Digital Experience Guide: AR & Gamification</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font and clean base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* Clean white background */
+        }
+        /* Custom glow effect for call-to-action buttons */
+        .btn-glow {
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.5), 0 0 20px rgba(6, 182, 212, 0.3);
+        }
+        /* Custom styles for the AI chat section */
+        #ai-chat-output {
+            min-height: 200px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white sticky top-0 z-10 border-b border-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-cyan-600 tracking-wider rounded-lg">
+                ORACURA <span class="text-gray-500 font-light">| Experience</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="#ar-strategy" class="text-gray-600 hover:text-cyan-600 transition duration-300 p-2 rounded-md">Plaque Pathfinder</a>
+                <a href="#gamification" class="text-gray-600 hover:text-cyan-600 transition duration-300 p-2 rounded-md">Habit Builder</a>
+                <a href="#ai-expert" class="text-gray-600 hover:text-cyan-600 transition duration-300 p-2 rounded-md font-semibold">AI Expert ✨</a>
+                <a href="#contact" class="bg-cyan-600 text-white py-2 px-4 rounded-full font-medium hover:bg-cyan-700 transition duration-300">Download App</a>
+            </nav>
+            <button class="md:hidden text-gray-600 hover:text-cyan-600 focus:outline-none p-2 rounded-md bg-gray-50">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section: User-focused Welcome -->
+        <section class="text-center py-20 sm:py-32 bg-cyan-50/50 border-b border-gray-100">
+            <div class="container mx-auto px-4">
+                <span class="text-sm font-semibold uppercase text-cyan-700 mb-2 block tracking-widest">Digital Activation Guide</span>
+                <h1 class="text-5xl sm:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Floss Smarter with <br class="sm:hidden">
+                    <span class="text-cyan-600">AR & Gamified Coaching</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto mb-10">
+                    ORACURA transforms your routine with two powerful tools: **The Plaque Pathfinder AR** to prove efficacy and the **Gamified Habit Builder** to master technique.
+                </p>
+                <a href="#ar-strategy" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-10 rounded-full transition duration-300 transform hover:scale-105 btn-glow">
+                    Start Your Flossing Journey
+                </a>
+            </div>
+        </section>
+
+        <!-- What You'll Achieve Section (Replaced Strategy Overview) -->
+        <section class="py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-gray-900">What You'll Achieve with ORACURA</h2>
+                    <p class="text-xl text-gray-600 mt-4">Move beyond basic flossing to measurable, perfect oral care.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 rounded-xl border border-cyan-200 shadow-md">
+                        <span class="text-5xl text-cyan-600 mb-3 block">🎯</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Prove Efficacy</h3>
+                        <p class="text-gray-700">Visually see the water jet removing simulated plaque in real-time.</p>
+                    </div>
+                    <div class="p-6 rounded-xl border border-cyan-200 shadow-md">
+                        <span class="text-5xl text-cyan-600 mb-3 block">🧠</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Master Technique</h3>
+                        <p class="text-gray-700">Learn precise angles and pressure to prevent common issues like splashback.</p>
+                    </div>
+                    <div class="p-6 rounded-xl border border-cyan-200 shadow-md">
+                        <span class="text-5xl text-cyan-600 mb-3 block">🏅</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Build Habits</h3>
+                        <p class="text-gray-700">Turn your daily chore into a rewarding ritual with points and rewards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AR Experience Section: Instructional Guide -->
+        <section id="ar-strategy" class="py-16 sm:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">Step 1: Visualize Your Clean with Plaque Pathfinder AR</h2>
+                <p class="text-xl text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                    **The Plaque Pathfinder** is an Augmented Reality filter that instantly demonstrates how the ORACURA water flosser works, addressing any initial apprehension about the device.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Text Instructions -->
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-semibold text-gray-900">How It Works: AR Efficacy Visualization</h3>
+
+                        <!-- Instruction 1 -->
+                        <div class="flex items-start space-x-4">
+                            <span class="text-cyan-600 text-3xl font-bold">1.</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800">Launch the Filter</h4>
+                                <p class="text-gray-600">Access the Plaque Pathfinder AR experience directly through your ORACURA App or a linked social media filter (e.g., Instagram/Snapchat).</p>
+                            </div>
+                        </div>
+
+                        <!-- Instruction 2 -->
+                        <div class="flex items-start space-x-4">
+                            <span class="text-cyan-600 text-3xl font-bold">2.</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800">Target Hard-to-Reach Areas</h4>
+                                <p class="text-gray-600">Point your phone's camera at your teeth (especially areas with braces or implants). The AR instantly overlays simulated plaque on your problem areas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Instruction 3 -->
+                        <div class="flex items-start space-x-4">
+                            <span class="text-cyan-600 text-3xl font-bold">3.</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800">Watch the Clean</h4>
+                                <p class="text-gray-600">As you move the water flosser's jet across your teeth, the AR visualization shows the jet **penetrating and removing the simulated plaque** in real-time, validating the device's mechanism.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Depiction Placeholder (Updated to use your uploaded image) -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border border-cyan-100 text-center flex flex-col justify-center h-full min-h-80">
+                        <h4 class="text-xl font-bold text-cyan-600 mb-4">AR Visualization: Plaque Pathfinder in Action</h4>
+                        <!-- Updated Image Source -->
+                        <img src="uploaded:Gemini_Generated_Image_jboxf1jboxf1jbox.jpg-49f47aaa-959c-4fa2-afb6-0ba39488febb" alt="Augmented Reality interactive oral health demo on a smartphone." class="mx-auto rounded-lg shadow-md w-full max-w-sm">
+                        <p class="text-gray-500 mt-4 text-sm">Interactive AR demo showing smart brush action and gum protection features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gamification Section: Instructional Guide -->
+        <section id="gamification" class="py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">Step 2: Build a Perfect Habit with the Gamified Trainer</h2>
+                <p class="text-xl text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                    Turn your daily chore into a satisfying ritual. Our **Gamified Habit Builder** helps you overcome the learning curve and rewards you for perfect technique.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Visual Depiction (Updated to use your new uploaded image) -->
+                    <div class="bg-cyan-50 p-8 rounded-xl shadow-2xl border border-cyan-200 text-center flex flex-col justify-center h-full min-h-80 order-2 md:order-1">
+                        <h4 class="text-xl font-bold text-cyan-700 mb-4">Gamification: The Virtual Mouth Trainer</h4>
+                        <!-- NEW Image Source -->
+                        <img src="uploaded:image_e4a502.png-be375f61-e6e2-42c1-aaf2-17b4d6892175" alt="Gamified habit tracker screen with virtual coach and points system in a mirror." class="mx-auto rounded-lg shadow-md w-full max-w-sm">
+                        <p class="text-gray-500 mt-4 text-sm">Gamified coaching provides real-time feedback and points during your brushing session.</p>
+                    </div>
+
+                    <!-- Text Instructions -->
+                    <div class="space-y-6 order-1 md:order-2">
+                        <h3 class="text-2xl font-semibold text-gray-900">Your Daily Ritual: Learn & Earn</h3>
+
+                        <!-- Instruction 1 -->
+                        <div class="flex items-start space-x-4">
+                            <span class="text-cyan-600 text-3xl font-bold">1.</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800">Daily Check-In & Technique</h4>
+                                <p class="text-gray-600">Complete a short, daily check-in game in the ORACURA app. This addresses the learning curve by providing instructional feedback on **precise technique** (e.g., how to avoid splashback).</p>
+                            </div>
+                        </div>
+
+                        <!-- Instruction 2 -->
+                        <div class="flex items-start space-x-4">
+                            <span class="text-cyan-600 text-3xl font-bold">2.</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800">Nurture Your Virtual Mouth</h4>
+                                <p class="text-gray-600">Your logged usage and session scores nurture a **Virtual Mouth** character. Consistent, high-score cleaning sessions keep your virtual friend happy and healthy!</p>
+                            </div>
+                        </div>
+
+                        <!-- Instruction 3 -->
+                        <div class="flex items-start space-x-4">
+                            <span class="text-cyan-600 text-3xl font-bold">3.</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800">Unlock Real-World Rewards</h4>
+                                <p class="text-gray-600">Earn points and badges (like 'Floss Boss') for your performance. Redeem these points for real-world rewards, such as **discounts on accessory refills and subscription upgrades.**</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Coach Section (NEW GEMINI API INTEGRATION) -->
+        <section id="ai-expert" class="py-16 sm:py-24 bg-cyan-900 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-4">ORACURA AI Expert ✨</h2>
+                    <p class="text-xl text-cyan-200 mt-4">
+                        Instant, personalized advice on water flossing technique, oral health questions, and device tips, powered by Gemini.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl text-gray-800">
+                    <!-- Chat Output Area -->
+                    <div id="ai-chat-output" class="bg-gray-50 p-4 rounded-lg mb-4 h-64 overflow-y-auto border border-gray-200">
+                        <p class="text-gray-500 italic">Ask me anything about water flossing, gum health, or ORACURA usage!</p>
+                    </div>
+
+                    <!-- Input Form -->
+                    <div class="flex space-x-3">
+                        <input type="text" id="user-query" placeholder="e.g., How do I clean my braces with a water flosser?" class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                        <button id="send-query" class="flex-shrink-0 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                            Ask Expert
+                        </button>
+                    </div>
+                    <div id="loading-indicator" class="mt-2 text-cyan-400 hidden">
+                        <svg class="animate-spin h-5 w-5 mr-3 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Thinking...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Features Section (Existing Core Features) -->
+        <section id="impact" class="py-16 sm:py-24 bg-gray-900 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <h2 class="text-4xl font-bold text-white mb-12">The ORACURA App Ecosystem: Core Features</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature 1: Progress Tracking -->
+                    <div class="bg-gray-800 p-6 rounded-xl border-b-4 border-cyan-500 shadow-lg">
+                        <span class="text-4xl text-cyan-400 mb-2 block">📈</span>
+                        <h3 class="text-xl font-extrabold text-white">Advanced Progress Tracking</h3>
+                        <p class="text-sm text-gray-400 mt-2">View historical data on your coverage, pressure, and duration. Get monthly reports to share with your dentist.</p>
+                    </div>
+
+                    <!-- Feature 2: Refill Management -->
+                    <div class="bg-gray-800 p-6 rounded-xl border-b-4 border-cyan-500 shadow-lg">
+                        <span class="text-4xl text-cyan-400 mb-2 block">🛒</span>
+                        <h3 class="text-xl font-extrabold text-white">Smart Refill Management</h3>
+                        <p class="text-sm text-gray-400 mt-2">Automatically track tip usage and order replacements with one click, utilizing your earned loyalty rewards.</p>
+                    </div>
+
+                    <!-- Feature 3: Community & Sharing -->
+                    <div class="bg-gray-800 p-6 rounded-xl border-b-4 border-cyan-500 shadow-lg">
+                        <span class="text-4xl text-cyan-400 mb-2 block">🏆</span>
+                        <h3 class="text-xl font-extrabold text-white">Social Challenges & Rewards</h3>
+                        <p class="text-sm text-gray-400 mt-2">Compete with friends or family on weekly streak challenges and share your mastery badges and high scores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact -->
+        <section id="contact" class="py-16 sm:py-24 text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Ready to Master Your Oral Health?</h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Download the ORACURA app now to unlock the Plaque Pathfinder AR and start building your perfect flossing habit today.
+                </p>
+                <a href="#" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-12 rounded-full shadow-lg transition duration-300 transform hover:scale-105 btn-glow">
+                    Download the ORACURA App
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-600 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; 2025 ORACURA Digital Experience. All Rights Reserved.</p>
+            <p class="text-xs mt-2">Floss Smarter &middot; Live Healthier</p>
+        </div>
+    </footer>
+
+    <!-- Gemini API Script -->
+    <script>
+        const sendQueryButton = document.getElementById('send-query');
+        const userQueryInput = document.getElementById('user-query');
+        const chatOutput = document.getElementById('ai-chat-output');
+        const loadingIndicator = document.getElementById('loading-indicator');
+
+        // Utility function for exponential backoff retry logic
+        async function fetchWithRetry(url, options, maxRetries = 5) {
+            for (let i = 0; i < maxRetries; i++) {
+                try {
+                    const response = await fetch(url, options);
+                    if (!response.ok) {
+                        // If it's a 429 error, we should retry. Otherwise, throw.
+                        if (response.status === 429 && i < maxRetries - 1) {
+                            const delay = Math.pow(2, i) * 1000; // Exponential backoff
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                            continue; // Retry the request
+                        }
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response;
+                } catch (error) {
+                    if (i === maxRetries - 1) throw error;
+                    const delay = Math.pow(2, i) * 1000; // Exponential backoff
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                }
+            }
+        }
+
+        sendQueryButton.addEventListener('click', async () => {
+            const userQuery = userQueryInput.value.trim();
+            if (!userQuery) return;
+
+            // 1. Display user query
+            chatOutput.innerHTML += `<div class="p-3 bg-cyan-100 rounded-lg shadow-sm mb-2 text-right"><strong>You:</strong> ${userQuery}</div>`;
+            userQueryInput.value = '';
+            
+            // Scroll to bottom
+            chatOutput.scrollTop = chatOutput.scrollHeight;
+
+            // 2. Show loading indicator and disable button
+            loadingIndicator.classList.remove('hidden');
+            sendQueryButton.disabled = true;
+
+            try {
+                const systemPrompt = "You are the ORACURA AI Oral Health Expert. You provide friendly, concise, and scientifically accurate advice on water flossing, oral hygiene techniques, and general gum/tooth health. Keep answers brief and professional. Do not recommend specific medical treatments, always suggest consulting a dentist for personalized diagnosis. Ensure your advice is grounded in current oral health standards.";
+                const apiKey = ""; 
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+                const payload = {
+                    contents: [{ parts: [{ text: userQuery }] }],
+                    // Use Google Search for up-to-date and grounded health information
+                    tools: [{ "google_search": {} }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] },
+                };
+
+                const response = await fetchWithRetry(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+                let aiText = "I apologize, I couldn't generate a response at this time. Please try asking again.";
+                let sourcesHtml = '';
+
+                if (candidate && candidate.content?.parts?.[0]?.text) {
+                    aiText = candidate.content.parts[0].text;
+                    
+                    // Extract grounding sources
+                    const groundingMetadata = candidate.groundingAttributions;
+                    if (groundingMetadata) {
+                        const sources = groundingMetadata
+                            .map(attribution => ({
+                                uri: attribution.web?.uri,
+                                title: attribution.web?.title,
+                            }))
+                            .filter(source => source.uri && source.title);
+
+                        if (sources.length > 0) {
+                            sourcesHtml = `<div class="mt-2 pt-2 border-t border-gray-200 text-xs text-gray-500">
+                                <p class="font-semibold mb-1">Sources (Grounded by Google Search):</p>
+                                <ul class="list-disc ml-4 space-y-1">
+                                    ${sources.slice(0, 3).map(s => `<li><a href="${s.uri}" target="_blank" class="text-cyan-600 hover:underline">${s.title}</a></li>`).join('')}
+                                </ul>
+                            </div>`;
+                        }
+                    }
+                }
+
+                // 3. Display AI response
+                chatOutput.innerHTML += `
+                    <div class="p-3 bg-white rounded-lg shadow-md mb-4 border border-cyan-300">
+                        <strong class="text-cyan-600">ORACURA Expert:</strong> ${aiText}
+                        ${sourcesHtml}
+                    </div>
+                `;
+
+            } catch (error) {
+                console.error("Gemini API Error:", error);
+                chatOutput.innerHTML += `<div class="p-3 bg-red-100 text-red-700 rounded-lg shadow-sm mb-4"><strong>Error:</strong> Failed to connect to the AI expert. Please check your connection.</div>`;
+            } finally {
+                // 4. Hide loading and enable button
+                loadingIndicator.classList.add('hidden');
+                sendQueryButton.disabled = false;
+                // Scroll to bottom after new content is added
+                chatOutput.scrollTop = chatOutput.scrollHeight;
+            }
+        });
+    </script>
+
+</body>
+</html>
